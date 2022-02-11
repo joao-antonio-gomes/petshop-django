@@ -1,2 +1,4 @@
 .env
 /db
+/app/static/node_modules
+/app/static/package.json

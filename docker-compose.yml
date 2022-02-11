@@ -33,6 +33,13 @@ services:
     networks:
       - django_network
 
+  npm:
+    image: node:10.13
+    volumes:
+      - ./app/static:/code/app/static
+    working_dir: /code/app/static
+    command: npm install
+
 networks:
   django_network:
     driver: bridge
